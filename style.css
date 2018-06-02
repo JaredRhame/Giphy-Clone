@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Acme');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Acme', sans-serif;
+
+}
+
+body{
+  background-color: #E5E5E5;
+  overflow-x: hidden;
+}
+#search-form{
+  text-align: center;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#search-bar{
+  background-color: snow;
+  border-style: none;
+  border-radius: 25px;
+  text-align: center;
+  height: 50px;
+  font-size: 44px;
+  width: auto;
+  transition: ease-in-out, width .5s ease-in-out;
+}
+
+#search-bar:focus{
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  width: 1000px;
+}
+
+#search-bar:active{
+  background-color: snow;
+}
+#submit-btn{
+  margin: 20px;
+  height: 50px;
+  width: 200px;
+  background: linear-gradient(to bottom right, red, purple, yellow);
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-size: 26px;
+}
+
+#submit-btn:hover{
+  background: linear-gradient(to bottom right, snow, purple, snow);
+
+}
+#main-canvas{
+  height: 100%;
+  width: 100vw;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+  overflow-x: hidden;
+  margin-top: 50px;
+  background-color: #CCC;
+  padding: 45px;
+}
+
+#main-canvas img{
+
+
+}
+
+#sticky-footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   height: 29px;
+   width: 100%;
+   padding: 5px;
+   background-color: #232323;
+   color: snow;
+   text-align: center;
+   font-size: 29px;
+}
+
+#test{
+  background: linear-gradient( red, rgb(87, 65, 107), yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
