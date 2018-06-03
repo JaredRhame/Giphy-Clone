@@ -40,15 +40,18 @@ body{
 #search-bar:active{
   background-color: snow;
 }
-#submit-btn{
+
+.btn{
   margin: 20px;
   height: 50px;
   width: 200px;
-  background: linear-gradient(to bottom right, red, purple, yellow);
   border-radius: 25px;
   border: none;
   color: white;
   font-size: 26px;
+}
+#submit-btn{
+  background: linear-gradient(to bottom right, red, purple, yellow);
 }
 
 #submit-btn:hover{
@@ -63,16 +66,18 @@ body{
   justify-content: center;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
-  grid-gap: 10px;
+  grid-gap: 0;
   overflow-x: hidden;
   margin-top: 50px;
   background-color: #CCC;
   padding: 45px;
 }
 
-#main-canvas img{
-
-
+.gif{
+  width: 500px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #sticky-footer {
@@ -88,8 +93,23 @@ body{
    font-size: 29px;
 }
 
-#test{
+#footer-txt{
   background: linear-gradient( red, rgb(87, 65, 107), yellow);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+#add-gifs{
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 35px 35px;
+}
+
+#add-gifs-btn{
+  background: linear-gradient(to bottom right, yellow, #80ed6f, aqua);
+}
+#add-gifs-btn:hover{
+  background: linear-gradient(to bottom right, snow, #80ed6f, snow);
 }
