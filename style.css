@@ -102,6 +102,7 @@ body{
 #add-gifs{
   text-align: center;
   display: flex;
+  flex-direction: row;
   align-content: center;
   justify-content: center;
   margin: 35px 35px;
@@ -112,4 +113,13 @@ body{
 }
 #add-gifs-btn:hover{
   background: linear-gradient(to bottom right, snow, #80ed6f, snow);
+}
+
+#home-arrow{
+  font-size: 36;
+  background: linear-gradient( plum, rgb(87, 65, 107), snow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: none;
+
 }
