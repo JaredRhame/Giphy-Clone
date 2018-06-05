@@ -9,10 +9,6 @@ var endPoint;
 //let myURL = `//api.giphy.com/v1/gifs/search?q=&api_key=${API_KEY}&limit=5`;
 var gifs;
 let gifLimit = 12;
-// Can use for trending on load
-//fetch(myURL).then(function(response) {
-  //if(response.ok){
-
 
 searchForm.addEventListener('submit', search);
 
@@ -54,11 +50,10 @@ var displayGif = gifs => {
 }
 function moreGifs(e) {
   gifLimit += 12;
-  console.log(gifLimit);
   var aTag = document.createElement("A");
   homeArrow.style.display = "inline";
 
-  if(gifLimit > 24){
+  if(gifLimit > 48){
     gifLimit = 12;
     addGifs.innerText = "Back to the Top";
     addGifs.appendChild(aTag);

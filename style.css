@@ -11,6 +11,11 @@ body{
   background-color: #E5E5E5;
   overflow-x: hidden;
 }
+
+a{
+  text-decoration: none;
+}
+
 #search-form{
   text-align: center;
   margin-top: 35px;
@@ -121,5 +126,4 @@ body{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: none;
-
 }
