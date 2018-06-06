@@ -125,5 +125,7 @@ a{
   background: linear-gradient( plum, rgb(87, 65, 107), snow);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: fixed;
   display: none;
+  top: 80vh;
 }

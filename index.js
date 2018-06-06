@@ -12,7 +12,6 @@ let gifLimit = 12;
 
 searchForm.addEventListener('submit', search);
 
-
 function search(e){
   var searchTerm = document.querySelector('#search-bar').value;
   endPoint = "search";
@@ -25,8 +24,10 @@ function search(e){
     if(response.ok){
       response.json().then(function(json) {
         gifs = json.data;
+
         while (gifView.firstChild) {
                 gifView.removeChild(gifView.firstChild);
+
               }
         for (var i = 0; i < gifs.length; i++) {
           displayGif(gifs[i]);
@@ -46,21 +47,22 @@ var displayGif = gifs => {
   gifView.appendChild(img);
   img.classList.toggle("gif");
   addGifs.addEventListener('click', moreGifs);
+  window.addEventListener('scroll', homeArrowReset);
 
 }
 function moreGifs(e) {
   gifLimit += 12;
   var aTag = document.createElement("A");
-  homeArrow.style.display = "inline";
 
   if(gifLimit > 48){
-    gifLimit = 12;
-    addGifs.innerText = "Back to the Top";
-    addGifs.appendChild(aTag);
-    addGifs.setAttribute.href = "#search-form";
+    addGifs.style.display = "none";
 
   }else if(gifLimit <= 48){
     search(e);
 
   }
+}
+
+function homeArrowReset(e){
+  homeArrow.style.display = "inline";
 }
